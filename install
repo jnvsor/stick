@@ -1,0 +1,6 @@
+#!/bin/bash -x
+mount="/media/$USER/bootloader"
+dir=$( dirname "$0" )
+
+sudo cp "$dir/grub.cfg" "$mount/boot/grub/grub.cfg"
+sudo cp -r "$dir/config" "$mount/"
